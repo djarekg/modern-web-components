@@ -1,0 +1,24 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  dev:
+    desc: Start application in development mode with hot-code reloading, error reporting and more
+    cmds:
+      - bunx brisa dev
+
+  dev:debug:
+    desc: Same as `dev` but with debugging enabled
+    cmds:
+      - bunx brisa dev -d
+
+  build:
+    desc: Creates an optimized production build of your application
+    cmds:
+      - bunx brisa build -w src/web-components/counter-client.tsx -c src/components/counter-server.tsx -c src/components/footer.tsx -c src/components/navigation.tsx
+
+  start:
+    desc: Start application in production mode
+    cmds:
+      - bunx brisa start

@@ -1,0 +1,34 @@
+{
+  "name": "@mw/components",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "packageManager": "bun@1.1.41",
+  "author": "Dustin Griffith",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djarekg/modern-web-components"
+  },
+  "engines": {
+    "bun": ">=1.1.41"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "@mw/source": "./src/index.ts",
+      "import": "./dist/**/*.js",
+      "types": "./dist/**/*.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "dev": "task build -- --watch",
+    "start": "task build"
+  },
+  "dependencies": {
+    "@mw/web": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

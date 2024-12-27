@@ -1,0 +1,9 @@
+// typedoc.json
+{
+  "name": "@mw/workspace documentation",
+  "entryPointStrategy": "packages",
+  "entryPoints": ["packages/*", "apps/*"],
+  "packageOptions": {
+    "entryPoints": ["src/index.ts"]
+  }
+}
