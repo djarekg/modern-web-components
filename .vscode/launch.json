@@ -1,0 +1,13 @@
+{
+  "configurations": [
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Launch demo",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/apps/demo",
+      "preLaunchTask": "dev",
+      "postDebugTask": "terminate-dev"
+    }
+  ]
+}

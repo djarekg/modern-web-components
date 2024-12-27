@@ -145,7 +145,7 @@
     },
     "task.quickOpen.showAll": false,
     "github.copilot.chat.edits.suggestRelatedFilesForTests": false,
-    "github.copilot.chat.completionContext.typescript.mode": "",
+    "github.copilot.chat.completionContext.typescript.mode": ""
   },
   "extensions": {
     "recommendations": [
