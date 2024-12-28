@@ -24,23 +24,23 @@
     "bun.debugTerminal.stopOnEntry": false,
     "npm.packageManager": "bun",
 
-    "biome.lsp.trace.server": "verbose",
     "biome.experimental.rename": true,
 
     "editor.lightbulb.enabled": "on",
     "editor.defaultFormatter": "biomejs.biome",
-    // "editor.formatOnSave": true,
     "editor.insertSpaces": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports.biome": "explicit",
-      "source.fixAll.biome": "explicit",
       "quickfix.biome": "explicit"
+      // "source.fixAll.biome": "explicit",
     },
     "editor.codeActions.triggerOnFocusChange": true,
+
     "editor.quickSuggestions": {
       "other": "on",
       "comments": "off",
-      "strings": "off"
+      "strings": "on"
+      // "strings": true
     },
     "editor.suggestSelection": "first",
     "editor.roundedSelection": true,
@@ -48,7 +48,6 @@
     "editor.rulers": [100],
     "editor.experimentalEditContextEnabled": true,
     "editor.experimentalWhitespaceRendering": "font",
-    // "editor.hover.enabled": false,
 
     "javascript.format.semicolons": "insert",
     "javascript.preferences.importModuleSpecifier": "shortest",
@@ -61,8 +60,6 @@
       "editor.defaultFormatter": "biomejs.biome"
     },
 
-    // "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
-    // "typescript.tsc.autoDetect": "off",
     "typescript.autoClosingTags": true,
     "typescript.check.npmIsInstalled": false,
     "typescript.experimental.expandableHover": true,
@@ -76,7 +73,6 @@
     "typescript.suggest.completeJSDocs": true,
     "typescript.suggest.includeCompletionsForImportStatements": true,
     "typescript.suggest.jsdoc.generateReturns": true,
-    // "typescript.suggestionActions.enabled": true,
     "typescript.tsdk": "node_modules/typescript/lib",
     "typescript.tsserver.experimental.enableProjectDiagnostics": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
@@ -117,6 +113,16 @@
 
     "css.hover.documentation": false,
     "css.hover.references": false,
+    "files.associations": {
+      "*.css": "tailwindcss"
+    },
+    "tailwindCSS.includeLanguages": {
+      "javascript": "javascript",
+      "javascriptreact": "javascriptreact",
+      "typescript": "typescript",
+      "typescriptreact": "typescriptreact"
+    },
+
     "html.hover.references": false,
     "html.hover.documentation": false,
     "html.autoClosingTags": false,
@@ -128,6 +134,7 @@
       "**/node_modules": true,
       "**/cdk.out": true,
       "**/dist": true,
+      "**/build": true,
       "**/public": true,
       "CHANGELOG.md": true
     },

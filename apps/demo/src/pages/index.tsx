@@ -1,5 +1,3 @@
-import CounterServer from '@/components/counter-server';
-
 export default function Homepage() {
   return (
     <>
@@ -10,14 +8,6 @@ export default function Homepage() {
         <p class="edit-note">✏️ Change this page on </p>
         <code>src/pages/index.tsx</code>
       </div>
-
-      <section class="counter-section">
-        <h2>Counters</h2>
-        <div class="counters">
-          <counter-client initialValue={42} />
-          <CounterServer initialValue={37} />
-        </div>
-      </section>
     </>
   );
 }
