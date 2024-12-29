@@ -40,7 +40,6 @@
       "other": "on",
       "comments": "off",
       "strings": "on"
-      // "strings": true
     },
     "editor.suggestSelection": "first",
     "editor.roundedSelection": true,
@@ -137,6 +136,16 @@
       "**/build": true,
       "**/public": true,
       "CHANGELOG.md": true
+    },
+
+    "files.exclude": {
+      "**/.out": true,
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true
     },
 
     "workbench.editor.labelFormat": "medium",

@@ -6,6 +6,7 @@
       "name": "Launch demo",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}/apps/demo",
+      "userDataDir": "${workspaceFolder}/.out/edge",
       "preLaunchTask": "dev",
       "postDebugTask": "terminate-dev"
     }
